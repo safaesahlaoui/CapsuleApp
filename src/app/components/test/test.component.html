@@ -1,0 +1,150 @@
+<div class="bounding-box">
+  <div class="parent">
+    <ul>
+      <div>
+        <mat-icon class="texticon">post_add</mat-icon>
+        <textarea
+          id="1"
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 1"
+          (cdkDragEnded)="onDragEnded($event)"
+          class="text"
+          placeholder="type something"
+        >
+        </textarea>
+
+        <textarea
+          id="2"
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 2"
+          (cdkDragEnded)="onDragEnded($event)"
+          class="text"
+          placeholder="type something"
+        ></textarea>
+
+        <textarea
+          id="3"
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 3"
+          (cdkDragEnded)="onDragEnded($event)"
+          class="text"
+          placeholder="type something"
+        >
+        </textarea>
+      </div>
+    </ul>
+
+    <ul>
+      <div>
+        <mat-icon class="dragicon">videocam</mat-icon>
+        <video
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 1"
+        ></video>
+        <video
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 2"
+        ></video>
+        <video
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 3"
+          (cdkDragEnded)="onDragEnded($event)"
+        >
+          <mat-icon class="dragicon">videocam</mat-icon>
+        </video>
+      </div>
+    </ul>
+    <ul>
+      <div>
+        <mat-icon class="dragicon">image</mat-icon>
+        <img
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 1"
+          class="dragimg"
+        />
+        <img
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 2"
+          class="dragimg"
+        />
+        <img
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 3"
+          class="dragimg"
+        />
+        <img
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 4"
+          class="dragimg"
+        />
+        <img
+          cdkDrag
+          cdkDragBoundary=".bounding-box"
+          style="z-index: 5"
+          class="dragimg"
+        />
+      </div>
+    </ul>
+    <ul>
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 1"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 2"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 3"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 4"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 5"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 6"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+      <mat-icon
+        cdkDrag
+        cdkDragBoundary=".bounding-box"
+        style="z-index: 7"
+        class="dragicon"
+        >music_note</mat-icon
+      >
+    </ul>
+  </div>
+</div>

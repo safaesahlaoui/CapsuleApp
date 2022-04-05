@@ -1,0 +1,25 @@
+body {background-color: #ddd; margin: 3rem;}
+
+#tv {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: rgb(22, 22, 22);
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+  margin: auto;
+  margin-top: 10PX;
+}
+#tv:hover {
+  border-radius: 50% 50% 50% 50% / 5% 5% 5% 5% ;
+  box-shadow: 10px 10px 10px 10px #B5C9E2;
+}
+p{
+font-size: 30px;
+padding-left: 60px;    
+  font-family: "Goudy Old Style", Verdana, sans-serif;
+  margin-bottom: 2em;
+line-height: 150%;
+}

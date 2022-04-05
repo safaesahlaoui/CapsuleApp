@@ -1,0 +1,61 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile
+      *ngFor="let card of cards | async"
+      [colspan]="card.cols"
+      [rowspan]="card.rows"
+    >
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{ card.title }}
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div class="component">
+            <div class="text">
+              <mat-icon class="text1">title</mat-icon>
+              <textarea class="text2"></textarea>
+            </div>
+            <div class="image">
+              <img class="rounded-circle" [src]="urllink" />
+              <mat-icon>play_circle</mat-icon>
+              <input
+                type="file"
+                class="btn btn-success btn-sm"
+                (change)="selectFile($event)"
+              />
+            </div>
+            <div class="video">
+              <mat-icon>play_circle</mat-icon>
+              <input
+                type="file"
+                class="file-upload"
+                onchange="console.log(event.target.files)"
+              />
+            </div>
+            <div class="sound">
+              <mat-icon>play_circle</mat-icon>
+              <input
+                type="file"
+                class="file-upload"
+                onchange="console.log(event.target.files)"
+              />
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

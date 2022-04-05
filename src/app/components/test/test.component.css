@@ -1,0 +1,77 @@
+textarea {
+    height: 40px;
+    width: 100px;
+    border: 1px solid gray;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    color: black;
+  }
+ 
+
+  
+  .bounding-box {
+    width: 90%;
+    height: 90%;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    margin: auto;
+  }
+  
+  video {
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    position: absolute;
+  }
+  .parent {
+    display: block;
+    width: 25%;
+    height: 65%;
+    border: 1px solid gainsboro;
+    box-shadow: 2px 2px 2.5px lightblue;
+    border-radius: 8px;
+  }
+  ul {
+    height: 50px;
+    margin-top: 30px;
+    z-index: 1;
+    padding-inline-start: 2px;
+  }
+  .dragicon::before {
+    color: black;
+    position: absolute;
+  }
+  
+  .dragicon{
+    display: block;
+    position: absolute;
+    color: #3a5b81;
+  }
+  
+  /* textarea {
+    height: 70px;
+    width: 70px;
+  } */
+  .dragimg {
+    position: absolute;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    display: block;
+  }
+  audio {
+    position: absolute;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    display: block;
+  }
+  .texticon{
+    display: inline;
+    position: absolute;
+    z-index: 10;
+    color: #3a5b81;
+  }

@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+p{
+    padding-left: 394px;
+    color:#840037;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: rgb(220, 156, 156);
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -2;
+}
+
+.text-copy:nth-child(2){
+	//stroke: #840037;
+  //stroke: #244a5f;
+  stroke: #B5C9E2;
+  
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(3){
+	//stroke: #002b5c ;
+  //stroke: #5E72EB;
+  stroke: #314059;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(4){
+	//stroke: #2049ed;
+  stroke: #1D1D1F;
+	animation-delay: -5s;
+}
+
+.text-copy:nth-child(5){
+	//stroke: lightgrey;
+  stroke: #B09390;
+	animation-delay: -6s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+div{
+  margin: auto;
+  margin-left: 30px;
+}
+div p{
+  //font-family:Copperplate, Papyrus, fantasy  ;
+  font-size: xx-large;
+  font-family: 'Comfortaa', cursive;
+
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #244a5f;
+  //background-color: #B94A3E;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  margin-left: 40%;
+  margin-top: 5px;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
